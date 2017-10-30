@@ -1,0 +1,90 @@
+header {
+	background-color: black;
+	color:white;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	position:fixed;
+	font-family: 'Bellefair', serif;
+	font-size: 22px;
+	font-weight:400;
+}
+
+header ul {
+	display: flex;
+	justify-content: center;
+	padding:0;
+	margin:0;
+}
+
+header ul li {
+	list-style-type:none;
+	display: list-item;
+	line-height: 50px;
+	padding-left: 150px;
+}
+
+header ul li a {
+	color:#fff;
+	text-decoration: none;
+}
+
+
+.about h1{
+	font-family: 'Nothing You Could Do', cursive;
+	letter-spacing: 3px;
+	font-size:50px;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 200px;
+	background-image:url('../img/background.png');
+}
+
+#profile {
+	width: 200px;
+	height: 200px;
+	background-image: url('../img/fakeme.jpg');
+	background-size: 270px;
+	background-position: center;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 250px;
+	margin: 0 auto;
+}
+
+
+
+p{
+	font-family: 'Bellefair', serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 350px;
+	padding-right: 350px;
+}
+
+
+footer {
+	background-color: white;
+	width: 100%;
+	height: auto;
+	padding-top: 50px;
+	text-align: center;
+}
+
+footer .socialmedia img {
+	margin-left: 50px;
+	width:30px;
+	height:30px;
+}
+
+
+
+footer p{
+	padding: 40px;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 200;
+}	
