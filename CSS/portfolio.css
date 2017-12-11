@@ -1,0 +1,78 @@
+header {
+	background-color: black;
+	font-family: 'Bellefair', serif;
+	font-size: 22px;
+	font-weight:400;
+	width: 100%;
+	height: 40px;
+	top: 0;
+	left: 0;
+	position:fixed;
+}
+/*黑带 for navbar: background black; text style & size; bar margin*/
+
+header ul {
+	display: flex;
+	justify-content: center;
+	padding:0;
+	margin:0;
+}
+/*字幕 for navtext: text in center*/
+
+header ul li {
+	line-height: 50px;
+	text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 30%;
+    overflow: hidden;
+}
+/*字列 for navlist: list整体;*/
+
+header ul li a {
+	color:#fff;
+	text-decoration: none;
+}
+/*For navtextdetail: text white; no underline*/
+
+.vertical-line{
+	color:#A9A9A9;
+	width:0px;
+	height:100%;
+	margin-left: 1300px;
+	margin-top: 200px;
+	position: absolute;
+	
+	
+}
+
+
+body{background-color: #FFFAF0}
+
+.title{
+	text-align:center;
+	margin-top: 80px;
+
+}
+
+.mainwork{
+	text-align:center;
+	font-family: 'Bellefair', serif; 
+	font-size: 20px;
+	margin-top: 80px;
+	color: black;
+	margin-bottom: 200px;
+}
+
+
+
+
+
+
+footer p{
+	padding: 10px;
+	color: black;
+	text-align:center;
+	font-size: 15px;
+	font-weight: 200;
+}	

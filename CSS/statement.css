@@ -1,0 +1,83 @@
+
+header {
+	background-color: black;
+	font-family: 'Bellefair', serif;
+	font-size: 22px;
+	font-weight:400;
+	width: 100%;
+	height: 40px;
+	top: 0;
+	left: 0;
+	position:fixed;
+}
+/*黑带 for navbar: background black; text style & size; bar margin*/
+
+header ul {
+	display: flex;
+	justify-content: center;
+	padding:0;
+	margin:0;
+}
+/*字幕 for navtext: text in center*/
+
+header ul li {
+	line-height: 50px;
+	text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 30%;
+    overflow: hidden;
+}
+/*字列 for navlist: list整体;*/
+
+header ul li a {
+	color:#fff;
+	text-decoration: none;
+}
+/*For navtextdetail: text white; no underline*/
+
+
+h1{
+	text-align: center;
+	font-family: 'Allerta Stencil', sans-serif;
+	font-size: 30px;
+	padding-top:80px;
+	padding-bottom: 0px;
+	word-spacing: 5px;
+
+}
+
+.box{
+	font-size:20px;
+	font-family: 'Jaldi', sans-serif;
+	margin:auto;
+	padding:20px;
+	padding-top: 10px;
+	width: 50%;
+	}
+
+
+footer {
+	background-color: white;
+	width: 100%;
+	height: auto;
+	padding-top: 40px;
+	text-align: center;
+}
+
+footer .socialmedia img {
+	margin:50px;
+	margin-top: 10px;
+	width:30px;
+	height:30px;
+}
+
+
+
+footer p{
+	padding: 10px;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 200;
+}	

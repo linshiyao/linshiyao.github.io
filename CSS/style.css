@@ -1,14 +1,15 @@
 header {
 	background-color: black;
-	color:white;
-	top: 0;
-	width: 100%;
-	height: 40px;
-	position:fixed;
 	font-family: 'Bellefair', serif;
 	font-size: 22px;
 	font-weight:400;
+	width: 100%;
+	height: 40px;
+	top: 0;
+	left: 0;
+	position:fixed;
 }
+/*黑带 for navbar: background black; text style & size; bar margin*/
 
 header ul {
 	display: flex;
@@ -16,29 +17,44 @@ header ul {
 	padding:0;
 	margin:0;
 }
+/*字幕 for navtext: text in center*/
 
 header ul li {
-	list-style-type:none;
-	display: list-item;
 	line-height: 50px;
-	padding-left: 150px;
+	text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 30%;
+    overflow: hidden;
 }
+/*字列 for navlist: list整体;*/
 
 header ul li a {
 	color:#fff;
 	text-decoration: none;
 }
+/*For navtextdetail: text white; no underline*/
 
+.music {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
 
 .about h1{
-	font-family: 'Nothing You Could Do', cursive;
-	letter-spacing: 3px;
+	font-family:'Nothing You Could Do', cursive;
+	letter-spacing:3px;
 	font-size:50px;
 	text-align: center;
 	padding-top: 80px;
-	padding-bottom: 200px;
+	padding-bottom: 450px;
 	background-image:url('../img/background.png');
+	background-repeat: no-repeat;
+	background-width: 100%;
+	background-size: 100%;
+	background-attachment: fixed;
 }
+
 
 #profile {
 	width: 200px;
@@ -50,7 +66,9 @@ header ul li a {
 	-webkit-border-radius: 50px;
 	border-radius: 250px;
 	margin: 0 auto;
+	margin-top: 100px;
 }
+/*头像*/
 
 
 
@@ -74,7 +92,8 @@ footer {
 }
 
 footer .socialmedia img {
-	margin-left: 50px;
+	margin: 50px;
+	margin-top: 10px;
 	width:30px;
 	height:30px;
 }
@@ -82,7 +101,7 @@ footer .socialmedia img {
 
 
 footer p{
-	padding: 40px;
+	padding: 10px;
 	color: black;
 	text-align: center;
 	font-size: 15px;

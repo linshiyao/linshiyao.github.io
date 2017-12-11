@@ -1,0 +1,83 @@
+header {
+    background-color: black;
+    font-family: 'Bellefair', serif;
+    font-size: 22px;
+    font-weight:400;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    position:fixed;
+}
+/*黑带 for navbar: background black; text style & size; bar margin*/
+
+header ul {
+    display: flex;
+    justify-content: center;
+    padding:0;
+    margin:0;
+}
+/*字幕 for navtext: text in center*/
+
+header ul li {
+    line-height: 50px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 30%;
+    overflow: hidden;
+}
+/*字列 for navlist: list整体;*/
+
+header ul li a {
+    color:#fff;
+    text-decoration: none;
+}
+/*For navtextdetail: text white; no underline*/
+
+
+input[type=text], select, textarea {
+    width: 50%; /* Full width */
+    padding: 15px; /* Some padding */  
+    border: 1px solid #696969; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 10px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #696969;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: black;
+}
+
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 500px;
+    margin-top: 200px;
+    margin-bottom: 0px;
+}
+
+
+footer p{
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+    padding-top: 150px;
+}   
