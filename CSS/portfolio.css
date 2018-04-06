@@ -8,6 +8,7 @@ header {
 	top: 0;
 	left: 0;
 	position:fixed;
+
 }
 /*黑带 for navbar: background black; text style & size; bar margin*/
 
@@ -35,39 +36,101 @@ header ul li a {
 }
 /*For navtextdetail: text white; no underline*/
 
-.vertical-line{
-	color:#A9A9A9;
-	width:0px;
-	height:100%;
-	margin-left: 1300px;
-	margin-top: 200px;
-	position: absolute;
-	
-	
-}
-
 
 body{background-color: #FFFAF0}
 
 .title{
 	text-align:center;
-	margin-top: 80px;
+	margin-top: 180px;
 
 }
 
 .mainwork{
+    font-size:25px;
 	text-align:center;
 	font-family: 'Bellefair', serif; 
-	font-size: 20px;
-	margin-top: 80px;
+	margin-top: 20px;
 	color: black;
 	margin-bottom: 200px;
+    border-bottom: 20px;
+    padding-bottom: 0px;
 }
 
+.box1{
+    font-size:22px;
+	font-family: 'Bellefair', serif; 
+	margin:auto;
+	width: 50%;
+}
 
+.box2{
+    font-size:22px;
+	font-family: 'Bellefair', serif; 
+	margin:auto;
+	width: 50%;
+}
 
+.box3{
+    font-size:22px;
+	font-family: 'Bellefair', serif; 
+	margin:auto;
+	width: 50%;
+    margin-bottom: 150px;
+}
 
+.box4{
+    font-size:22px;
+	font-family: 'Bellefair', serif; 
+	margin:auto;
+	width: 50%;
+    margin-bottom: 150px;
+}
 
+.box5{
+    font-size:22px;
+	font-family: 'Bellefair', serif; 
+	margin:auto;
+	width: 50%;
+    margin-bottom: 150px;
+}
+
+.box6{
+    font-size:22px;
+	font-family: 'Bellefair', serif; 
+	margin:auto;
+	width: 50%;
+    margin-bottom: 150px;
+}
+
+.box7{
+    font-size:22px;
+	font-family: 'Bellefair', serif; 
+	margin:auto;
+	width: 50%;
+}
+
+.box8{
+    font-size:22px;
+	font-family: 'Bellefair', serif; 
+	margin:auto;
+	width: 50%;
+    margin-bottom: 150px;
+}
+
+.box9{
+    font-size:22px;
+	font-family: 'Bellefair', serif; 
+	margin:auto;
+	width: 50%;
+    margin-bottom: 150px;
+}
+
+.box10{
+    font-size:22px;
+	font-family: 'Bellefair', serif; 
+	margin:auto;
+	width: 50%;
+}
 
 footer p{
 	padding: 10px;
