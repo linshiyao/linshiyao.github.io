@@ -287,37 +287,37 @@ bg.background = '#d7bbbb';
         
         
         //////////FROM FBX IMPORT
-//        stats = new Stats();
-//        container.appendChild( stats.dom );
+        stats = new Stats();
+        container.appendChild( stats.dom );
         
 	//////////////////////////////////////////////////////////////////////////////////
 	//		render the whole thing on the page
 	//////////////////////////////////////////////////////////////////////////////////
 	
-//        var stats2 = new Stats();
-//        document.body.appendChild( stats2.dom );
-//        // render the scene
-//        onRenderFcts.push(function(){
-//            renderer.render( scene, camera );
-//            stats2.update();
-//        })
-//
-//        // run the rendering loop
-//        var lastTimeMsec= null
-//        requestAnimationFrame(function animate(nowMsec){
-//            // keep looping
-//            requestAnimationFrame( animate );
-//            // measure time
-//            lastTimeMsec	= lastTimeMsec || nowMsec-1000/60
-//            var deltaMsec	= Math.min(200, nowMsec - lastTimeMsec)
-//            lastTimeMsec	= nowMsec
-//            // call each update function
-//            onRenderFcts.forEach(function(onRenderFct){
-//                onRenderFct(deltaMsec/1000, nowMsec/1000)
-//            })
-//        })
+        var stats2 = new Stats();
+        document.body.appendChild( stats2.dom );
+        // render the scene
+        onRenderFcts.push(function(){
+            renderer.render( scene, camera );
+            stats2.update();
+        })
+
+        // run the rendering loop
+        var lastTimeMsec= null
+        requestAnimationFrame(function animate(nowMsec){
+            // keep looping
+            requestAnimationFrame( animate );
+            // measure time
+            lastTimeMsec	= lastTimeMsec || nowMsec-1000/60
+            var deltaMsec	= Math.min(200, nowMsec - lastTimeMsec)
+            lastTimeMsec	= nowMsec
+            // call each update function
+            onRenderFcts.forEach(function(onRenderFct){
+                onRenderFct(deltaMsec/1000, nowMsec/1000)
+            })
+        })
         
-    //animate();
+    animate();
         
         function animate() {
 				requestAnimationFrame( animate );
