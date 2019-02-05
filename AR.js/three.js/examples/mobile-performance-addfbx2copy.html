@@ -265,15 +265,15 @@ bg.background = '#d7bbbb';
          var loader = new THREE.OBJLoader( manager );
          loader.load( '../../data/data/male02/male02.obj', function ( object ) {
 
-             object.traverse( function ( child ) {
-
-                 if ( child instanceof THREE.Mesh ) {
-
-                     child.material.map = texture;
-
-                 }
-
-             } );
+           //  object.traverse( function ( child ) {
+//
+//                 if ( child instanceof THREE.Mesh ) {
+//
+//                     child.material.map = texture;
+//
+//                 }
+//
+//             } );
 
  //					object.position.y = - 95;
  //					scene.add( object );
