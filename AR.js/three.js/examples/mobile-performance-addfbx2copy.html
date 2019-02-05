@@ -171,27 +171,27 @@
         
         ///////////////////////////////////////////////////////////
         // add a static cube
-        geometry = new THREE.CubeGeometry(1,1,1);
-        material = new THREE.MeshNormalMaterial({
-            transparent : true,
-            opacity: 0.5,
-            side: THREE.DoubleSide
-        }); 
-        mesh = new THREE.Mesh( geometry, material );
-        mesh.position.y	= geometry.parameters.height/2
-        arWorldRoot.add(mesh);
-        // end cube code
+//        geometry = new THREE.CubeGeometry(1,1,1);
+//        material = new THREE.MeshNormalMaterial({
+//            transparent : true,
+//            opacity: 0.5,
+//            side: THREE.DoubleSide
+//        }); 
+//        mesh = new THREE.Mesh( geometry, material );
+//        mesh.position.y	= geometry.parameters.height/2
+//        arWorldRoot.add(mesh);
+//        // end cube code
         ///////////////////////////////////////////////////////////
         
     
         
         ///////////////////////////////////////////////////////////
         //add icosphere test from 3js playground
-        geometry = new THREE.IcosahedronGeometry(.3, 0); //edit scale (in this code a scale of 1 = size of target image)
-        var material	= new THREE.MeshNormalMaterial(); 
-        var mesh	= new THREE.Mesh( geometry, material );
-        mesh.position.y	= 0.5 //position y equals how far away from target 
-        arWorldRoot.add( mesh ); //instead of adding mesh to the scene right away we add only when the target is detected
+//        geometry = new THREE.IcosahedronGeometry(.3, 0); //edit scale (in this code a scale of 1 = size of target image)
+//        var material	= new THREE.MeshNormalMaterial(); 
+//        var mesh	= new THREE.Mesh( geometry, material );
+//        mesh.position.y	= 0.5 //position y equals how far away from target 
+//        arWorldRoot.add( mesh ); //instead of adding mesh to the scene right away we add only when the target is detected
         //end icosphere code
         ///////////////////////////////////////////////////////////
       geometry = new THREE.CircleGeometry(150, 50, 0, 6.283185307179586);
@@ -241,29 +241,29 @@ bg.background = '#d7bbbb';
          //add obj model (static)
          // obj texture
 
-         var manager = new THREE.LoadingManager();
-         manager.onProgress = function ( item, loaded, total ) {
-
-             console.log( item, loaded, total );
-
-         };
-
-         var textureLoader = new THREE.TextureLoader( manager );
-         var texture = textureLoader.load( '../../data/data/UV_Grid_Sm.jpg' );
-
-         // obj model
-         var onProgress = function ( xhr ) {
-             if ( xhr.lengthComputable ) {
-                 var percentComplete = xhr.loaded / xhr.total * 100;
-                 console.log( Math.round(percentComplete, 2) + '% downloaded' );
-             }
-         };
-
-         var onError = function ( xhr ) {
-         };
-
-         var loader = new THREE.OBJLoader( manager );
-         loader.load( '../../data/data/male02/male02.obj', function ( object ) {
+//         var manager = new THREE.LoadingManager();
+//         manager.onProgress = function ( item, loaded, total ) {
+//
+//             console.log( item, loaded, total );
+//
+//         };
+//
+//         var textureLoader = new THREE.TextureLoader( manager );
+//         var texture = textureLoader.load( '../../data/data/UV_Grid_Sm.jpg' );
+//
+//         // obj model
+//         var onProgress = function ( xhr ) {
+//             if ( xhr.lengthComputable ) {
+//                 var percentComplete = xhr.loaded / xhr.total * 100;
+//                 console.log( Math.round(percentComplete, 2) + '% downloaded' );
+//             }
+//         };
+//
+//         var onError = function ( xhr ) {
+//         };
+//
+//         var loader = new THREE.OBJLoader( manager );
+//         loader.load( '../../data/data/male02/male02.obj', function ( object ) {
 
            //  object.traverse( function ( child ) {
 //
@@ -287,35 +287,35 @@ bg.background = '#d7bbbb';
         
         
         //////////FROM FBX IMPORT
-        stats = new Stats();
-        container.appendChild( stats.dom );
+//        stats = new Stats();
+//        container.appendChild( stats.dom );
         
 	//////////////////////////////////////////////////////////////////////////////////
 	//		render the whole thing on the page
 	//////////////////////////////////////////////////////////////////////////////////
 	
-        var stats2 = new Stats();
-        document.body.appendChild( stats2.dom );
-        // render the scene
-        onRenderFcts.push(function(){
-            renderer.render( scene, camera );
-            stats2.update();
-        })
-
-        // run the rendering loop
-        var lastTimeMsec= null
-        requestAnimationFrame(function animate(nowMsec){
-            // keep looping
-            requestAnimationFrame( animate );
-            // measure time
-            lastTimeMsec	= lastTimeMsec || nowMsec-1000/60
-            var deltaMsec	= Math.min(200, nowMsec - lastTimeMsec)
-            lastTimeMsec	= nowMsec
-            // call each update function
-            onRenderFcts.forEach(function(onRenderFct){
-                onRenderFct(deltaMsec/1000, nowMsec/1000)
-            })
-        })
+//        var stats2 = new Stats();
+//        document.body.appendChild( stats2.dom );
+//        // render the scene
+//        onRenderFcts.push(function(){
+//            renderer.render( scene, camera );
+//            stats2.update();
+//        })
+//
+//        // run the rendering loop
+//        var lastTimeMsec= null
+//        requestAnimationFrame(function animate(nowMsec){
+//            // keep looping
+//            requestAnimationFrame( animate );
+//            // measure time
+//            lastTimeMsec	= lastTimeMsec || nowMsec-1000/60
+//            var deltaMsec	= Math.min(200, nowMsec - lastTimeMsec)
+//            lastTimeMsec	= nowMsec
+//            // call each update function
+//            onRenderFcts.forEach(function(onRenderFct){
+//                onRenderFct(deltaMsec/1000, nowMsec/1000)
+//            })
+//        })
         
     animate();
         
