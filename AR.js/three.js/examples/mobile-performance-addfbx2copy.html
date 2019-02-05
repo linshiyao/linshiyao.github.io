@@ -76,7 +76,7 @@
         
         //////////FROM FBX IMPORT
         container = document.createElement( 'div' );
-        document.body.appendChild( container );
+document.body.appendChild( container );
         //////////////////////////////////////////////////////////////////////////////////
         //		Initialize a basic camera
         //////////////////////////////////////////////////////////////////////////////////
@@ -197,18 +197,14 @@
       geometry = new THREE.CircleGeometry(150, 50, 0, 6.283185307179586);
 material = new THREE.MeshLambertMaterial({shading: THREE.FlatShading, color: 0xdcdcdc});
 mesh = new THREE.Mesh(geometry, material);
-scene.add(mesh);
-
-bg = document.body.style;
-bg.background = '#d7bbbb';
         
         ///////////////////////////////////////////////////////////
 //        // add a taurus with rotation animation
 //        geometry = new THREE.TorusKnotGeometry(0.3,0.1,64,16);
 //        material = new THREE.MeshNormalMaterial(); 
 //        mesh = new THREE.Mesh( geometry, material );
-//        mesh.position.y	= 0.5
-//        arWorldRoot.add( mesh );
+        mesh.position.y	= 0.5
+        arWorldRoot.add( mesh );
 //        onRenderFcts.push(function(){
 //            mesh.rotation.x += 0.1
 //        })
