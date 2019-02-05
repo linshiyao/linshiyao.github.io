@@ -194,10 +194,9 @@ document.body.appendChild( container );
 //        arWorldRoot.add( mesh ); //instead of adding mesh to the scene right away we add only when the target is detected
         //end icosphere code
         ///////////////////////////////////////////////////////////
-      geometry = new THREE.CircleGeometry(150, 50, 0, 6.283185307179586);
+      geometry = new THREE.SphereGeometry(150, 100, 100);
 material = new THREE.MeshLambertMaterial({shading: THREE.FlatShading, color: 0xdcdcdc});
 mesh = new THREE.Mesh(geometry, material);
-        
         ///////////////////////////////////////////////////////////
 //        // add a taurus with rotation animation
 //        geometry = new THREE.TorusKnotGeometry(0.3,0.1,64,16);
