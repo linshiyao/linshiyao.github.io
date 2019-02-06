@@ -187,8 +187,8 @@
         
         ///////////////////////////////////////////////////////////
         //add icosphere test from 3js playground
-   geometry = new THREE.SphereGeometry(46.29, 17.34, 21.25);
-material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
+  geometry = new THREE.OctahedronGeometry(150, 0);
+material = new THREE.MeshPhongMaterial({shading: THREE.FlatShading, color: 0xdcdcdc, ambient: 0xffffff, emissive: 0x000000, specular: 0x111111, shininess: 30});
 mesh = new THREE.Mesh(geometry, material);
 mesh.scale.x = mesh.scale.y = mesh.scale.z = 0.02;
         
